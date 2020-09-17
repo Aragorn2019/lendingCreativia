@@ -240,29 +240,27 @@ header
         &:nth-child(8)
             grid-column: 11/15
         
-        // .content
-        //     display: none
-        //     position: absolute
-        //     top: 0
-        //     right: 0
-        //     left: 0
-        //     bottom: 0
+        .content
+            display: none
+            position: absolute
+            top: 0
+            right: 0
+            left: 0
+            bottom: 0
 
-    // .img__link:after
-    //     position: absolute
-    //     display: block
-    //     content: "design name"
-    //     text-align: center
-    //     height: 100%
-    //     width: 100%
-    //     top: 0
-    //     right: 0
-    //     left: 0
-    //     bottom: 0
-    // .img__link:hover::after
-    //     content: "design name"
-    //     height: 100%
-    //     width: 100%
+        &:hover
+            .content
+                display: flex
+                justify-content: center
+                align-items: center
+                background: rgba(0, 0, 0, 0.7)
+
+                .img__link
+                    color: #fff;
+
+
+    .portfolio_examples_img
+        width: 100%
         
 
 

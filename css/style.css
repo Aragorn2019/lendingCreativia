@@ -349,4 +349,34 @@ header .header__content .header__content__description {
   -ms-grid-column-span: 4;
   grid-column: 11/15;
 }
+
+.portfolio_examples .portfolio_examples_item .content {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.portfolio_examples .portfolio_examples_item:hover .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.portfolio_examples .portfolio_examples_item:hover .content .img__link {
+  color: #fff;
+}
+
+.portfolio_examples .portfolio_examples_img {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

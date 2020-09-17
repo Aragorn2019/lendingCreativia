@@ -1,0 +1,11 @@
+$(document).ready(function(){
+	$('.spoiler__block-item__title').click(function(event){
+		if($('.spoiler').hasClass('one')){
+			$('.spoiler__block-item__title').not($(this)).removeClass('active');
+			$('.spoiler__block-item__title').removeClass('selected');
+			$('.spoiler__block-item__text').not($(this).next()).slideUp(300);
+		}
+		$(this).toggleClass('active').next().slideToggle(300);
+		$(this).toggleClass('active').addClass("selected");		
+	});
+});

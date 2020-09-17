@@ -1,0 +1,270 @@
+$red: #ff0036
+$black: #131313
+
+body
+    font-family: 'Lato', sans-serif
+    color: $black
+
+a
+  text-decoration: none
+  color: #fff
+  &:hover
+      text-decoration: none
+      color: #fff
+    
+.container
+    max-width: 1170px
+    width: 100%
+    padding: 0
+
+header
+    padding-top: 265px
+    padding-bottom: 200px
+    position: relative
+    background-image: url(../images/firstbg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top
+    min-height: 700px
+    .header__top
+        z-index: 1
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        height: 66px
+        background: rgba(0, 0, 0, 0.6)
+        img
+            position: absolute
+        .container
+            .menu
+                margin-right: 0
+                margin-left: auto
+                padding: 0
+                text-align: right
+                max-width: 900px
+                li
+                    display: inline-block
+                    text-transform: uppercase
+                    line-height: 67px
+                    margin-left: 36px
+                    a
+                        font-family: 'Raleway', sans-serif
+                        text-decoration: none
+                        font-size: 18px
+                        color: #a4a4a4
+                        transition: 0.2s
+                        position: relative
+                        &:hover
+                            color: white
+                            &:before
+                                left: 50%
+                                position: absolute
+                                content: ""
+                                display: block
+                                height: 2px
+                                width: 27px
+                                background-color: $red
+                                transform: translateX(-50%)
+                            &:after
+                                left: 50%
+                                position: absolute
+                                content: ""
+                                display: block
+                                height: 2px
+                                width: 27px
+                                background-color: $red
+                                transform: translateX(-50%)
+
+    .header__content
+        min-height: 230px
+        color: #fff                           
+        .header__content__title
+            font-family: 'Raleway', sans-serif
+            font-weight: bold
+            font-size: 30px
+            text-align: center
+            color: #fff
+            span
+                color: $red
+        
+        .header__content__description
+            text-align: center
+            color: #fff
+            max-width: 1030px
+            margin: 40px auto 0 auto
+
+.btn__red
+    margin-top: 45px
+    text-transform: uppercase
+    padding: 10px 35px
+    font-family: 'Raleway', sans-serif
+    font-size: 20px
+    background-color: $red
+    border: 0
+    width: 170px
+    &:hover
+        background-color: #fe5478
+
+.btn__black
+    margin-top: 45px
+    text-transform: uppercase
+    padding: 10px 35px
+    font-family: 'Raleway', sans-serif
+    font-size: 20px
+    background-color: $black
+    border: 0
+    width: 170px
+    &:hover
+        background-color: #6c6b6b
+
+.about_creativia
+    padding: 100px 0 100px 0
+    &_h1
+        font-family: 'Raleway', sans-serif
+        text-align: center
+        color: $black
+        font-size: 30px
+        font-weight: bold
+        span
+            color: $red
+    &_p
+        text-align: center
+        margin-top: 53px
+        font-size: 16px
+        font-weight: bold
+        span
+            color: $red
+.spoiler
+    &__p
+        margin-top: 105px
+        font-size: 16px
+        text-align: justify
+        margin-bottom: 43px
+    &__block-item
+        margin-bottom: 10px
+        &__title
+            padding-left: 91px
+            font-size: 20px
+            position: relative
+            font-family: 'Raleway', sans-serif
+            cursor: pointer
+            border: 1px solid #e7e7e7
+            background-color: #f7f7f7
+            // &::before,
+            // &::after
+            //     content: ""
+            //     position: absolute
+        &__text
+            padding: 10px 16px
+            text-align: justify
+            display: none
+    .selected
+        color: $red
+
+.about_creativia_images
+    margin-top: 105px
+
+
+.scroll_bar
+    display: block
+    margin: 100px auto
+    width: 515px
+    
+.about_creativia_item
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    height: 210px
+    &_title
+        font-family: 'Raleway', sans-serif
+        font-size: 20px
+        text-transform: uppercase
+    &_text
+        font-size: 16px
+        text-align: center
+
+.portfolio_inner_title
+    padding: 106px 0 
+    height: 268px
+    background-color: $black
+    &_h3
+        text-align: center
+        font-family: Raleway
+        font-weight: bold
+        font-size: 30px
+        color: white
+    &_menu
+        &_ul
+            margin-top: 10px
+            text-align: center
+            font-family: Lato
+            font-weight: bold
+            font-size: 16px
+            color: #a4a4a4
+        &_li
+            text-transform: uppercase
+            display: inline
+            &:not(:first-child)
+                margin-left: 22px
+            &:hover
+                color: $red
+                cursor: pointer
+
+.portfolio_examples
+    display: grid
+    grid-template-columns: repeat(14, 1fr)
+    grid-template-rows: repeat(2, 300px)
+    .portfolio_examples_item
+        position: relative
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        overflow: hidden
+        &:nth-child(1)
+            grid-column: 1/5
+        &:nth-child(2)
+            grid-column: 5/8
+        &:nth-child(3)
+            grid-column: 8/12
+        &:nth-child(4)
+            grid-column: 12/15
+        &:nth-child(5)
+            grid-column: 1/4
+        &:nth-child(6)
+            grid-column: 4/8
+        &:nth-child(7)
+            grid-column: 8/11
+        &:nth-child(8)
+            grid-column: 11/15
+        
+        // .content
+        //     display: none
+        //     position: absolute
+        //     top: 0
+        //     right: 0
+        //     left: 0
+        //     bottom: 0
+
+    // .img__link:after
+    //     position: absolute
+    //     display: block
+    //     content: "design name"
+    //     text-align: center
+    //     height: 100%
+    //     width: 100%
+    //     top: 0
+    //     right: 0
+    //     left: 0
+    //     bottom: 0
+    // .img__link:hover::after
+    //     content: "design name"
+    //     height: 100%
+    //     width: 100%
+        
+
+
+
+    

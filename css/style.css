@@ -248,9 +248,13 @@ header .header__content .header__content__description {
   text-align: center;
 }
 
+.portfolio {
+  padding-bottom: 110px;
+  background-color: #131313;
+}
+
 .portfolio_inner_title {
   padding: 106px 0;
-  height: 268px;
   background-color: #131313;
 }
 
@@ -370,6 +374,11 @@ header .header__content .header__content__description {
       -ms-flex-align: center;
           align-items: center;
   background: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.portfolio_examples .portfolio_examples_item:hover .content img {
+  margin-right: 10px;
 }
 
 .portfolio_examples .portfolio_examples_item:hover .content .img__link {
@@ -378,5 +387,95 @@ header .header__content .header__content__description {
 
 .portfolio_examples .portfolio_examples_img {
   width: 100%;
+}
+
+.team {
+  padding: 100px 117px 96px 117px;
+}
+
+.team .team-content-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.team .team-content-title span {
+  color: #ff0036;
+}
+
+.team .team-content-text {
+  margin-top: 54px;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.team .team-content-text span {
+  color: #ff0036;
+}
+
+.team .team-content-persons {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team .team-content-persons-item {
+  text-align: center;
+  border: 1px solid #e7e7e7;
+}
+
+.team .team-content-persons-item img {
+  overflow: hidden;
+  width: 270px;
+  height: 240px;
+  position: relative;
+}
+
+.team .team-content-persons-item-name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  margin-top: 34px;
+  text-transform: uppercase;
+}
+
+.team .team-content-persons-item-profession {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  margin-top: 25px;
+  color: #505050;
+  margin-bottom: 34px;
+}
+
+.team .team-content-persons-item-hidden {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.team .team-content-persons-item-hidden:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.7);
 }
 /*# sourceMappingURL=style.css.map */

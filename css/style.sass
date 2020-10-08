@@ -186,9 +186,12 @@ header
         font-size: 16px
         text-align: center
 
+.portfolio
+    padding-bottom: 110px
+    background-color: $black
+
 .portfolio_inner_title
-    padding: 106px 0 
-    height: 268px
+    padding: 106px 0
     background-color: $black
     &_h3
         text-align: center
@@ -254,15 +257,75 @@ header
                 justify-content: center
                 align-items: center
                 background: rgba(0, 0, 0, 0.7)
+                cursor: pointer
+                
+                img
+                    margin-right: 10px 
 
                 .img__link
-                    color: #fff;
+                    color: #fff
 
 
     .portfolio_examples_img
         width: 100%
         
 
-
-
+.team
+    padding: 100px 117px 96px 117px
     
+    .team-content
+
+        &-title
+            font-family: 'Raleway', sans-serif
+            font-size: 30px
+            font-weight: bold
+            text-align: center
+            span
+                color: $red
+    
+        &-text 
+            margin-top: 54px
+            font-family: 'Lato', sans-serif
+            font-size: 15px
+            font-weight: bold
+            text-align: center
+            span
+                color: $red
+
+        &-persons
+            margin-top: 100px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+
+        &-persons-item
+            text-align: center
+            border: 1px solid #e7e7e7
+            img
+                overflow: hidden
+                width: 270px
+                height: 240px
+                position: relative
+            &-name
+                font-family: 'Raleway', sans-serif
+                font-size: 20px
+                margin-top: 34px
+                text-transform: uppercase
+            &-profession
+                font-family: 'Lato', sans-serif
+                font-size: 16px
+                margin-top: 25px
+                color: #505050
+                margin-bottom: 34px
+            &-hidden
+                display: none
+                position: absolute
+                top: 0
+                right: 0
+                left: 0
+                bottom: 0
+                &:hover
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    background: rgba(0, 0, 0, 0.7)

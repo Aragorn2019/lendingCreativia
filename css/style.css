@@ -433,13 +433,13 @@ header .header__content .header__content__description {
 .team .team-content-persons-item {
   text-align: center;
   border: 1px solid #e7e7e7;
+  position: relative;
 }
 
 .team .team-content-persons-item img {
   overflow: hidden;
   width: 270px;
   height: 240px;
-  position: relative;
 }
 
 .team .team-content-persons-item-name {
@@ -457,16 +457,17 @@ header .header__content .header__content__description {
   margin-bottom: 34px;
 }
 
-.team .team-content-persons-item-hidden {
+.team .team-content-persons-item .content {
   display: none;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
+  color: #fff;
 }
 
-.team .team-content-persons-item-hidden:hover {
+.team .team-content-persons-item:hover .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
